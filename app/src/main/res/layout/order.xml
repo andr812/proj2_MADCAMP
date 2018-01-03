@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.project2.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="이름: "/>
+        <EditText
+            android:id="@+id/nametxt"
+            android:hint="이름 적자!!!!!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="10">
+        <ListView
+            android:id="@+id/foodlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#ffa528"
+            android:layout_weight="5">
+        </ListView>
+
+        <Button
+            android:id="@+id/resultbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="투표 결과"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/votebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투표"/>
+
+            <Button
+                android:id="@+id/revotebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="재투표"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>
